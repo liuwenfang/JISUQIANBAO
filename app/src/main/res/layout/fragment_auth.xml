@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@color/nav_blue">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="请您认真完成以下认证\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:text="温馨提示：只有实名认证通过才能进行其他认证"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="-20dp"
+                android:background="@color/white"
+                android:paddingBottom="30dp"
+                android:paddingTop="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout style="@style/consummateLine">
+
+                            <Button
+                                android:id="@+id/btAuthName"
+                                style="@style/certificationButton"
+                                android:drawableTop="@mipmap/img_auth_id"
+                                android:text="个人实名认证"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/consummateLine">
+
+                            <Button
+                                android:id="@+id/btAuthContacts"
+                                style="@style/certificationButton"
+                                android:drawableTop="@mipmap/img_auth_lianxiren"
+                                android:text="联系人认证"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout style="@style/consummateLine">
+
+                            <Button
+                                android:id="@+id/btAuthPhone"
+                                style="@style/certificationButton"
+                                android:drawableTop="@mipmap/img_auth_phone"
+                                android:text="手机号认证"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/consummateLine">
+
+                            <Button
+                                android:id="@+id/btAuthTB"
+                                style="@style/certificationButton"
+                                android:drawableTop="@mipmap/img_auth_tb"
+                                android:text="淘宝认证"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

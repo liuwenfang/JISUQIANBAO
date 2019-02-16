@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/diy_back_tran_color"
+    android:orientation="vertical" >
+    <com.ahxbapp.jsqb.customview.HorizontalListView
+        android:layout_width="match_parent"
+        android:id="@+id/list_parent_View"
+        android:layout_above="@+id/list_child_View"
+        android:background="#F15347"
+        android:layout_height="30dp">
+    </com.ahxbapp.jsqb.customview.HorizontalListView>
+
+    <com.ahxbapp.jsqb.customview.HorizontalListView
+        android:layout_width="match_parent"
+        android:id="@+id/list_child_View"
+        android:background="#FF6779"
+        android:layout_above="@+id/list_content_View"
+        android:layout_height="30dp">
+    </com.ahxbapp.jsqb.customview.HorizontalListView>
+
+    <com.ahxbapp.jsqb.customview.HorizontalListView
+        android:layout_width="match_parent"
+        android:id="@+id/list_content_View"
+        android:layout_height="113dp"
+        android:layout_alignParentBottom="true"
+        >
+    </com.ahxbapp.jsqb.customview.HorizontalListView>
+</RelativeLayout>

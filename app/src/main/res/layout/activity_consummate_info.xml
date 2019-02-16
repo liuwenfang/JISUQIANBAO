@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    android:orientation="vertical"
+    tools:context="com.ahxbapp.jsqb.activity.ConsummateInfoActivity">
+
+    <include layout="@layout/tool_bar_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/nav_blue"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="个人认证"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="提供正确的个人信息可以增加审核率"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp">
+
+                    <LinearLayout style="@style/consummateLine">
+
+                        <Button
+                            android:id="@+id/btId1"
+                            style="@style/certificationButton"
+                            android:drawableTop="@mipmap/list_authentication_2"
+                            android:text="身份证认证"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvId1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未认证"
+                            android:textColor="@color/btn_gray"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/consummateLine">
+
+                        <Button
+                            android:id="@+id/btContent"
+                            style="@style/certificationButton"
+                            android:drawableTop="@mipmap/img_lianxiren"
+                            android:text="联系人认证"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvContent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未认证"
+                            android:textColor="@color/btn_gray"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                    <LinearLayout style="@style/consummateLine">
+
+                        <Button
+                            android:id="@+id/btPhone1"
+                            style="@style/certificationButton"
+                            android:drawableTop="@mipmap/list_authentication_7"
+                            android:text="手机号认证"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvPhone1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未认证"
+                            android:textColor="@color/btn_gray"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <!--<View-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_weight="1" />-->
+                    <LinearLayout style="@style/consummateLine">
+
+                        <Button
+                            android:id="@+id/btTB"
+                            style="@style/certificationButton"
+                            android:drawableTop="@mipmap/list_authentication_5"
+                            android:text="淘宝认证"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/consummateLine"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btZM"
+                            style="@style/certificationButton"
+                            android:drawableTop="@mipmap/list_authentication_4"
+                            android:text="芝麻信用认证"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvZM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未认证"
+                            android:textColor="@color/btn_gray"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGuarantee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="8dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/nav_blue"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="担保人认证"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout style="@style/consummateLine">
+
+                            <Button
+                                android:id="@+id/btId2"
+                                style="@style/certificationButton"
+                                android:drawableTop="@mipmap/list_authentication_2"
+                                android:text="身份证认证"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tvId2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="未认证"
+                                android:textColor="@color/btn_gray"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/consummateLine">
+
+                            <Button
+                                android:id="@+id/btPhone2"
+                                style="@style/certificationButton"
+                                android:drawableTop="@mipmap/list_authentication_7"
+                                android:text="手机号认证"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tvPhone2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="未认证"
+                                android:textColor="@color/btn_gray"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvGuarantee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/person_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="8dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/nav_blue"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="高级认证"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout style="@style/consummateLine">
+
+                            <Button
+                                style="@style/certificationButton"
+                                android:drawableTop="@mipmap/img_jd"
+                                android:text="京东认证"
+                                android:textColor="#C30008"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/consummateLine">
+
+                            <Button
+                                style="@style/certificationButton"
+                                android:drawableTop="@mipmap/img_ali"
+                                android:text="支付宝认证"
+                                android:textColor="#34B9F1"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/consummateLine">
+
+                            <Button
+                                style="@style/certificationButton"
+                                android:drawableTop="@mipmap/list_authentication_4color"
+                                android:text="芝麻认证"
+                                android:textColor="#63B7B3"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/consummateLine">
+
+                        <!--<Button-->
+                        <!--style="@style/certificationButton"-->
+                        <!--android:drawableTop="@mipmap/img_tb"-->
+                        <!--android:text="淘宝认证"-->
+                        <!--android:textColor="#F25C26"-->
+                        <!--android:textSize="14sp" />-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="securePay-180419-v3.2.1.3:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/aa91cbd0612e2297f97d1a3ff4c9a3faca5f4656/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/aa91cbd0612e2297f97d1a3ff4c9a3faca5f4656/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

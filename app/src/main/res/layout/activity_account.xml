@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar_title" />
+
+    <ScrollView
+        android:id="@+id/rootScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/all_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layoutRoot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="0dp">
+
+                        <LinearLayout xmlns:custom="http://schemas.android.com/apk/res/com.ahxbapp.jsqb"
+                            android:id="@+id/loginLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/divide_line" />
+
+                            <com.ahxbapp.common.LoginEditText
+                                android:id="@+id/editName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/login_edit"
+                                android:drawablePadding="15dp"
+                                android:hint="请输入账号"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/common_login_text"
+                                android:textColorHint="@color/common_login_text_hit"
+                                android:textCursorDrawable="@null"
+                                android:textSize="16sp"
+                                custom:leftIcon="@mipmap/icon_bgname" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:background="@color/divide_line" />
+
+                            <com.ahxbapp.common.LoginEditText
+                                android:id="@+id/editPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="12dp"
+                                android:background="@drawable/login_edit"
+                                android:drawablePadding="15dp"
+                                android:hint="请输入密码"
+                                android:imeOptions="actionUnspecified"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/common_login_text"
+                                android:textColorHint="@color/common_login_text_hit"
+                                android:textCursorDrawable="@null"
+                                android:textSize="16sp"
+                                custom:dark="true"
+                                custom:leftIcon="@mipmap/icon_bg_pwd" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginLeft="22dp"
+                                android:background="@color/divide_line"/>
+
+                            <LinearLayout
+                                android:id="@+id/codeLinear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+                                <com.ahxbapp.common.LoginEditText
+
+                                    android:id="@+id/editCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/login_edit"
+                                    android:drawablePadding="15dp"
+                                    android:hint="请输入图片验证码"
+                                    android:imeOptions="actionUnspecified"
+                                    android:maxLines="1"
+                                    android:layout_weight="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/common_login_text"
+                                    android:textColorHint="@color/common_login_text_hit"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    custom:leftIcon="@mipmap/icon_code"
+                                    android:layout_marginRight="22dp"
+                                    android:layout_marginLeft="22dp"
+                                    custom:dark="true" />
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/divide_line" />
+                                <ImageView
+                                    android:id="@+id/codeImage"
+                                    android:layout_width="130dp"
+                                    android:layout_height="match_parent"
+                                    />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/divide_line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/btn_agree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:button="@drawable/check_state"
+                                android:checked="true"
+                                android:scaleX="0.7"
+                                android:scaleY="0.7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:text="我同意"
+                                android:textColor="@color/forget_pass"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/text_agree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:autoLink="all"
+                                android:background="@color/clear_color"
+                                android:text="《极速钱包用户协议》"
+                                android:textColor="@color/text_red"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/define_btn"
+                            style="?android:textAppearanceButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="22dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/round_corner_btn"
+                            android:text="确 定"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

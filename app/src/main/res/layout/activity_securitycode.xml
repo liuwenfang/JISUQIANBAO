@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="@color/nav_blue" >-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <include layout="@layout/tool_bar_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_black_comment"
+        android:text="密码由6-20位英文字母、数字或符号组合"
+        android:padding="10dp"
+        android:id="@+id/tv_top"
+        android:background="@color/background_tab_pressed"/>
+    <include layout="@layout/divide_1"></include>
+
+    <LinearLayout xmlns:custom="http://schemas.android.com/apk/res/com.ahxbapp.jsqb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="输入原密码"
+            android:textColor="@color/common_title_color"
+            android:id="@+id/tv_left"
+            android:textSize="16dp"
+            />
+        <com.ahxbapp.common.LoginEditText
+            android:id="@+id/editCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/login_edit"
+            android:hint="请输入当前密码"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/common_detail_color"
+            android:textColorHint="@color/common_detail_color"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            custom:dark="true" />
+
+    </LinearLayout>
+    <include layout="@layout/divide_1"></include>
+
+    <LinearLayout xmlns:custom="http://schemas.android.com/apk/res/com.ahxbapp.jsqb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/newpassLin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="输入新密码"
+            android:textColor="@color/common_title_color"
+            android:textSize="16dp"
+            />
+        <com.ahxbapp.common.LoginEditText
+            android:id="@+id/newPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/login_edit"
+
+            android:hint="请输入新密码"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/common_detail_color"
+            android:textColorHint="@color/common_detail_color"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            custom:dark="true" />
+
+    </LinearLayout>
+    <include layout="@layout/divide_1"></include>
+
+    <LinearLayout xmlns:custom="http://schemas.android.com/apk/res/com.ahxbapp.jsqb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/newpassLinagain">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="确认新密码"
+            android:textColor="@color/common_title_color"
+            android:textSize="16dp"
+            />
+        <com.ahxbapp.common.LoginEditText
+            android:id="@+id/newPassagain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/login_edit"
+
+            android:hint="请再次输入新密码"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/common_detail_color"
+            android:textColorHint="@color/common_detail_color"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            custom:dark="true" />
+
+    </LinearLayout>
+    <include layout="@layout/divide_1"></include>
+    <Button
+        android:id="@+id/modifyButton"
+        style="?android:textAppearanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_corner_btn"
+        android:text="修改"
+        android:textColor="@drawable/font_login_button"
+        android:textSize="18sp"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"  />
+
+</LinearLayout>

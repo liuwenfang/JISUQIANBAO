@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/common_nav_bg" >
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_black_comment"
+        android:text="@string/modify_phone"
+        android:padding="10dp"
+        android:background="@color/background_tab_pressed"/>
+    <include layout="@layout/divide_1"></include>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:gravity="center_vertical"
+    android:id="@+id/layout_city"
+    android:minHeight="55dp"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:text="@string/modify_city"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:textColor="#4B4B4B"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/right_icon_city"
+        android:textColor="@color/font_black_comment"
+        android:layout_centerVertical="true"
+        android:drawablePadding="5dp"
+        android:text="中国大陆86"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/right_icon_city"
+        android:src="@mipmap/ic_list_right_arr"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/divide_1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:gravity="center_vertical"
+        android:id="@+id/layout_newPhone"
+        android:minHeight="55dp"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="@string/modify_newPhone"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:textColor="#4B4B4B"
+            android:textSize="16sp"
+            android:id="@+id/tv_newPhone"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_newPhone"
+            android:hint="@string/login_phone_hit"
+            android:textColor="@color/common_login_text"
+            android:textColorHint="@color/common_login_text_hit"
+
+            android:textCursorDrawable="@null"
+            style="?android:attr/textViewStyle"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edit_newPhone"
+            />
+    </RelativeLayout>
+    <include layout="@layout/divide_1" />
+
+
+    <Button
+        android:id="@+id/nextButton"
+        style="?android:textAppearanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/round_corner_btn"
+        android:text="@string/next_step"
+        android:textColor="@drawable/font_login_button"
+        android:textSize="18sp"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

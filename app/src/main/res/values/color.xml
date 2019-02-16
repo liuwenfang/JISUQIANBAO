@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="gray_drawable" type="drawable">#0990DC</item>
+    <color name="background_tab_pressed">#ffffff</color>
+    <color name="white_pressed">#ffd5d5d5</color>
+    <color name="stand_bg">#fff6f6f6</color>
+    <color name="divide">#ffeeeeee</color>
+    <color name="addjob_radio_text_gray">#ffcccccc</color>
+    <color name="divide_line">#ffdddddd</color>
+    <item name="drawer_bg_color_normal" type="color">#00ffffff</item>
+    <item name="drawer_bg_color_press" type="color">#ffeeeeee</item>
+    <item name="drawer_bg_color_white" type="color">#ff2d353f</item>
+    <item name="drawer_bg_color_divide" type="color">#ff243040</item>
+    <item name="drawer_bg_color_bottom" type="color">#ff1e2733</item>
+    <color name="font_black_0">#000000</color>
+    <color name="font_black_content">#ff222222</color>
+    <color name="font_black_2">#ff222222</color>
+    <color name="font_black_content_disabled">#ffcacaca</color>
+    <color name="font_black_comment">#B4B4B4</color>
+    <color name="font_black_6">#666666</color>
+    <color name="font_black_9">#999999</color>
+    <color name="font_green">#ff3bbd79</color>
+    <color name="red_f75">#FFF75388</color>
+    <color name="color_99999">#999999</color>
+    <color name="color_F6F6F6">#f6f6f6</color>
+    <color name="color_3BBD79">#3BBD79</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_E5E5E5">#e5e5e5</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_hint">#686D75</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_DDDDDD">#dddddd</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_4E90BF">#4E90BF</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    <color name="color_94989D">#94989D</color>
+    <color name="color_28303B">#28303B</color>
+
+    <drawable name="white">#ffffffff</drawable>
+    <color name="font_black">#010101</color>
+    <drawable name="black">#ff000000</drawable>
+    <drawable name="system_divide">#ffdddddd</drawable>
+    <color name="menu_item_text_disable">#ffffffff</color>
+    <color name="font_white">#828282</color>
+    <color name="font_white_disable">#dddddd</color>
+
+
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#ff000000</color>
+    <color name="base_grey">#e4e4e4</color>
+    <color name="dark_green">#00ACDF</color>
+    <color name="white">#ffffff</color>
+    <color name="base_font">#565656</color>
+    <color name="light_blue">#61C3FF</color>
+    <color name="light_grey">#999999</color>
+    <color name="base_line">#e6e5e6</color>
+    <color name="font_treat_news_title">#4d4d4d</color>
+    <color name="font_treat_news_content">#808080</color>
+    <color name="font_treat_news_time">#999999</color>
+    <color name="font_news_detial_title">#4c4c4c</color>
+    <color name="font_news_detial_author">#66c4ff</color>]
+    <color name="font_news_button">#cccccc</color>
+    <color name="edittext_bg">#f0f0f0</color>
+    <color name="comment_font">#ff6767</color>
+    <color name="font_comment_zan">#ff6663</color>
+    <color name="comment_up_bg">#fbfbfb</color>
+    <color name="login_font_description">#ff6666</color>
+    <color name="login_font_register">#664cff</color>
+    <color name="wheel_line">#C7C7C7</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="login_font">#515558</color>
+    <color name="award_price">#b2b2b2</color>
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+    <color name="score_font">#A6A6A6</color>
+
+    <drawable name="bg_maopao_comment">#ffeeeeee</drawable>
+
+
+    <color name="camera_background">#ff353535</color>
+
+    <color name="common_back_color">#F0F0F0</color>
+    <color name="common_light_color">#0990DC</color>
+    <color name="common_login_text_hit">#828282</color>
+    <color name="common_login_text">#b0000000</color>
+    <color name="common_btn_bg">#f2665c</color>
+    <color name="common_nav_bg">#f2f2f2</color>
+
+    <!--个人中心-->
+    <color name="login_bg">#F9F9F9</color>
+    <color name="clear_color">#00000000</color>
+    <color name="person_text">#646464</color>
+    <color name="forget_pass">#a0a0a0</color>
+    <color name="lineview_color">#fcfcfc</color>
+    <color name="common_title_color">#646464</color>
+    <color name="common_detail_color">#969696</color>
+    <color name="order_detail_bg">#fafafa</color>
+
+
+    <color name="diy_bottom_color">#ABABAB</color>
+    <color name="diy_back_tran_color">#8f000000</color>
+    <color name="diy_back_list_common">#727272</color>
+    <color name="diy_back_list_light">#727272</color>
+    <color name="btn_gray_big">#d2d2d2</color>
+    <color name="btn_gray">#7d7d7d</color>
+    <color name="nav_blue">#4BB1FE</color>
+    <color name="nav_bluepress">#4BB1FE</color>
+    <color name="all_bg">#f8f8f8</color>
+    <color name="home_font">#878787</color>
+
+    <color name="font_grey1">#d9d9d9</color>
+    <color name="font_grey2">#9c9c9c</color>
+    <color name="text_grey">#959595</color>
+    <color name="text_black">#4a4a4a</color>
+    <color name="detail_cash">#545454</color>
+
+    <color name="coupon_font">#444444</color>
+
+    <color name="phone_color">#ffaa29</color>
+    <color name="text_red">#ff7070</color>
+
+    <color name="tv_gray">#969696</color>
+
+
+    <color name="color_id">#84CFFF</color>
+    <color name="color_content">#FF8498</color>
+    <color name="color_phone">#FFC05E</color>
+
+    <color name="color_loan_vip">#ff3939</color>
+</resources>

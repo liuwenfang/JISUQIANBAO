@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ahxbapp.jsqb.customview.NoScrollViewPager
+        android:id="@+id/pagerFragmentProgram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">  
+            <RadioButton
+                android:id="@+id/homePage"
+                android:layout_width="140dp"
+                android:layout_height="38dp"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:text="修理厂服务"
+                android:paddingLeft="20dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/selector_home_xiuli"
+                android:textColor="@drawable/selector_text"
+                android:textSize="17sp" />  
+            <RadioButton
+                android:id="@+id/sureFirm"
+                android:layout_width="140dp"
+                android:layout_height="38dp"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/selector_home_baoyang"
+                android:text="预约保养"
+                android:drawablePadding="5dp"
+                android:textColor="@drawable/selector_text"
+                android:textSize="17sp" />  
+        </RadioGroup> 
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/divide_line"
+            android:layout_centerHorizontal="true"
+            ></View>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

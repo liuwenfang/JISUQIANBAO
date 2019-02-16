@@ -1,0 +1,162 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/tool_bar_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/rootScrollView"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/common_back_color"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/layoutRoot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="0dp"
+                        >
+                        <LinearLayout  xmlns:custom="http://schemas.android.com/apk/res/com.ahxbapp.jsqb"
+                            android:id="@+id/loginLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@color/white"
+                            android:layout_marginTop="10dp"
+                            android:visibility="visible">
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/divide_line"/>
+                            <com.ahxbapp.common.LoginEditText
+                                android:layout_marginRight="22dp"
+                                android:layout_marginLeft="22dp"
+                                android:id="@+id/editPhone"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/login_edit"
+                                android:hint="@string/login_phone_hit"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:drawablePadding="15dp"
+                                android:singleLine="true"
+                                android:textColor="@color/common_login_text"
+                                android:textColorHint="@color/common_login_text_hit"
+                                android:textCursorDrawable="@null"
+                                android:textSize="16sp"
+                                custom:leftIcon="@mipmap/icon_phone"/>
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginLeft="22dp"
+                                android:background="@color/divide_line"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <com.ahxbapp.common.LoginEditText
+                                    android:id="@+id/editCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:background="@drawable/login_edit"
+                                    android:drawablePadding="15dp"
+                                    android:hint="@string/login_code_hit"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:layout_weight="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/common_login_text"
+                                    android:textColorHint="@color/common_login_text_hit"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    custom:leftIcon="@mipmap/icon_pwd"
+                                    android:layout_marginRight="22dp"
+                                    android:layout_marginLeft="22dp"
+                                    custom:dark="true" />
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="6dp"
+                                    android:background="@color/divide_line" />
+                                <com.ahxbapp.common.widget.ValidePhoneView
+                                    android:id="@+id/sendCode"
+                                    android:layout_marginTop="1dp"
+                                    style="@style/ValidePhoneView"
+                                    android:textColor="@color/text_red"/>
+
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/divide_line"/>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/nextButton"
+                            style="?android:textAppearanceButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/round_corner_btn"
+                            android:textColor="@color/white"
+                            android:text="@string/next_step"
+                            android:textSize="18sp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginLeft="22dp"   />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="22dp"
+                                android:textSize="16sp"
+                                android:text="温馨提示:找回密码也可以通过"/>
+                            <TextView
+                                android:id="@+id/kefu_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/nav_blue"
+                                android:textSize="16sp"
+                                android:text="客服找回"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

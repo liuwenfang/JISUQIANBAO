@@ -1,0 +1,301 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+
+    <string name="hint_loading">正在加载中…</string>
+    <string name="no_pick">未指定</string>
+    <string name="empty">未指定</string>
+    <string name="title_activity_message_list">消息</string>
+
+    <string name="app_name">极速钱包</string>
+    <string name="action_settings">设置</string>
+    <string name="app_descption">医路同行，医路帮</string>
+    <string name="drawer_open">DrawerOpen</string>
+    <string name="drawer_close">DrawerClose</string>
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_no_data">没有更多数据</string>
+    <!-->规范诊疗<-->
+    <string name="treat_news_proviews">上一篇</string>
+    <string name="treat_news_next">下一篇</string>
+    <string name="edit_comment">我来说几句</string>
+    <string name="comment_publish">发送</string>
+    <string name="title_activity_news_detial">NewsDetialActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+
+    <!-->登陆<-->
+    <string name="register">注册</string>
+
+    <string name="textRegister">点击 \"注册\" 即表示您同意本公司的</string>
+
+    <string name="login_12">登陆</string>
+    <!-->我的<-->
+    <string name="mine_identify">资料认证</string>
+    <string name="mine_message">消息</string>
+    <string name="mine_order">订单上报</string>
+    <string name="mine_sign">签到</string>
+    <string name="mine_password_change">密码修改</string>
+    <string name="mine_opinion">意见反馈</string>
+    <string name="mine_invitor">邀请人</string>
+    <string name="mine_loginout">退出</string>
+    <string name="mine_provice">省市区</string>
+    <!--   <string name="mine_city">市</string>
+    <string name="mine_area">区</string>-->
+
+    <string name="mine_sfzh">填写身份证号</string>
+    <string name="mine_zsxm">填写真实姓名</string>
+    <string name="mine_zgzh">填写村医资格证号</string>
+    <string name="mine_zsqc">填写诊所全称</string>
+    <string name="mine_zsxxdz">填写诊所详细地址</string>
+    <string name="mine_tjhm">填写推荐人的手机号码</string>
+    <string name="mine_cyzgzzp">上传村医资格证照片</string>
+    <string name="mine_tjrz">提交认证</string>
+
+    <!-->兑换<-->
+    <string name="exchange_jifen">我的积分</string>
+    <string name="exchange_jfcj">积分抽奖</string>
+    <string name="connect_service_fail">连接服务器失败，请检查网络或稍后重试</string>
+
+
+    <string name="scan_text">将药品监管码放入框内，可以自动扫描</string>
+    <string name="title_activity_data_identification">DataIdentificationActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_wait_data_identification">WaitDataIdentificationActivity</string>
+    <string name="title_activity_order_appear">OrderAppearActivity</string>
+    <string name="title_activity_drug_appear">DrugAppearActivity</string>
+    <string name="browse_title"><![CDATA[Videos by Your Company]]></string>
+    <string name="related_movies">Related Videos</string>
+    <string name="vertical_grid_title"><![CDATA[Vertical Video Grid]]></string>
+    <string name="error">Error</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="init_text">00:00</string>
+    <string name="play_pause_description">Play Pause Button</string>
+    <string name="no_video_found">No video was found</string>
+    <string name="about_app">About DemoCast Player</string>
+    <string name="version">Version: %1$s</string>
+    <string name="popular_header">Popular Videos</string>
+    <string name="preferences">PREFERENCES</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+    <string name="should_start">shouldStart</string>
+    <string name="start_position">startPosition</string>
+    <string name="search_results">Search Results</string>
+
+    <!-- Error messages -->
+    <string name="video_error_media_load_timeout">Media loading timed out</string>
+    <string name="video_error_server_inaccessible">Media server was not reachable</string>
+    <string name="video_error_unknown_error">Failed to load video</string>
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="oops">Oops</string>
+    <string name="title_activity_detial_drug">DetialDrugActivity</string>
+    <string name="title_activity_scanner_order">ScannerOrderActivity</string>
+    <string name="title_activity_detial_award">DetialAwardActivity</string>
+    <string name="title_activity_option">OptionActivity</string>
+    <string name="title_activity_option_publish">OptionPublishActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_score">ScoreActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_find_password">FindPasswordActivity</string>
+    <string name="title_activity_token_lose">TokenLoseActivity</string>
+    <string name="title_activity_forget_password1">ForgetPassword1Activity</string>
+    <string name="title_activity_counts">CountsActivity</string>
+
+
+    <string name="surefirm">保险公司</string>
+    <string name="carList">车辆列表</string>
+
+
+    <!---登录-->
+    <string name="update_nickname_hit">请输入昵称</string>
+    <string name="update_username_hit">请输入真实姓名</string>
+    <string name="login_phone_hit">请输入手机号码</string>
+    <string name="receiver_name">收货人姓名</string>
+    <string name="phone_num">请输入手机号</string>
+    <string name="province_city">请选择省市区</string>
+    <string name="detail_addr">请输入详细地址</string>
+    <string name="post_code">请输入邮政编码</string>
+    <string name="login_password_hit">请输入6-20位字符密码</string>
+    <string name="login_code_hit">请输入验证码</string>
+    <string name="login_pass_hit">请输入新密码</string>
+    <string name="login_pass_hit1">请再次输入密码</string>
+    <string name="login">登录</string>
+    <string name="forgetpass"><u>忘记密码</u></string>
+    <string name="modifypassword">修改密码</string>
+    <string name="next_step">下一步</string>
+    <string name="confirm_and_update">确认并修改</string>
+    <string name="add">添加</string>
+    <string name="loading">加载中...</string>
+    <string name="reg_prompt">还没有账号?</string>
+    <string name="now_register"><u>立即注册</u></string>
+    <string name="send_code">发送验证码</string>
+    <string name="code_s">秒</string>
+    <string name="code_already_send">验证码已经发送</string>
+
+    <!--个人中心-->
+    <string name="per_nologin_text">点击这里登录</string>
+    <string name="per_myorder">我的订单</string>
+    <string name="per_cart">购物车</string>
+    <string name="per_receiveAddr">收货地址</string>
+    <string name="per_add_receiveAddr">添加收货地址</string>
+    <string name="per_mymessage">我的消息</string>
+    <string name="per_setting">设置</string>
+    <string name="order_detail">订单详情</string>
+    <string name="cart_calculate">结算</string>
+    <string name="send_method">配送方式</string>
+    <string name="coupon">优惠券</string>
+    <string name="set_accountSafe">账户安全</string>
+    <string name="set_clear">清除缓存</string>
+    <string name="set_help">用户帮助</string>
+    <string name="set_share">分享软件</string>
+    <string name="set_suggest">意见反馈</string>
+    <string name="set_about">关于我们</string>
+    <string name="set_call">联系我们</string>
+    <string name="update_phone">修改手机号</string>
+    <string name="update_email">修改邮箱</string>
+    <string name="update_weixin">修改微信号</string>
+    <string name="update_password">修改登录密码</string>
+    <string name="modify_phone">请输入您需要绑定的新手机号</string>
+    <string name="modify_email">请输入您需要绑定的邮箱</string>
+    <string name="modify_weixin">请输入您需要绑定的微信号</string>
+    <string name="modify_pass">密码由6-20位英文字母、数字或符号组合</string>
+    <!--****************设置***************-->
+    <string name="fill_message_code">请输入收到的短信验证码</string>
+    <string name="message_code">短信校验码</string>
+    <string name="verify_code">校验码</string>
+    <string name="new_pass">新密码</string>
+    <string name="fill_old_pass">请输入原密码</string>
+    <string name="fill_new_pass">请输入新密码</string>
+    <string name="fill_new_pass_again">请再次输入新密码</string>
+    <string name="fill_email">请输入邮箱地址</string>
+    <string name="fill_weixin">输入微信号</string>
+    <string name="please_fill_weixin">请输入微信号</string>
+
+
+    <string name="email">输入邮箱</string>
+    <string name="modify_city">国家和地区</string>
+    <string name="modify_newPhone">新手机号</string>
+    <string name="design_edit">编辑</string>
+    <string name="design_delete">删除</string>
+    <string name="design_add_cart">加入购物车</string>
+    <string name="person_male">男</string>
+    <string name="female">女</string>
+    <string name="user_nickname">昵称</string>
+    <string name="user_avatar">头像</string>
+    <string name="user_truename">真实姓名</string>
+    <string name="user_gender">性别</string>
+    <string name="user_birth">生日</string>
+    <string name="user_info">个人信息</string>
+    <string name="no_set">未设置</string>
+    <string name="change_head">更换头像</string>
+    <string name="change_nickname">修改昵称</string>
+    <string name="modify">修改</string>
+    <string name="update_truename">修改真实姓名</string>
+    <string name="birth_prompt">请选择当前日期之前的日期</string>
+    <string name="nickname_prompt">请填写昵称</string>
+    <string name="truename_prompt">请填写真实姓名</string>
+    <string name="confirm_delete">确认删除吗?</string>
+    <string name="confirm_delete_order">确定删除订单吗?</string>
+    <string name="confirm_cancel_order">确定取消订单吗?</string>
+    <string name="warning">提示</string>
+    <string name="change_language">切换语言</string>
+    <string name="chinese">中文</string>
+    <string name="english">English</string>
+    <string name="re_login">请重新登录</string>
+    <string name="addr_default_address">默认地址</string>
+    <string name="addr_set_addr">设置默认地址</string>
+    <string name="addr_name">姓名</string>
+    <string name="addr_phone">手机号码</string>
+    <string name="addr_pro_city">省、市</string>
+    <string name="addr_detail_addr">详细地址</string>
+    <string name="addr_postcode">邮政编码</string>
+
+    <!--购物车-->
+    <string name="cart_prompt">已完成的设计保存在我的设计中</string>
+    <string name="cart_all">全选</string>
+    <string name="cart_total_price">合计</string>
+    <string name="cart_no_freight">不含运费</string>
+    <string name="cart_to_calculate">去结算</string>
+    <string name="cart_choose_prompt">请至少选择一件商品</string>
+    <string name="Subtotal">小计</string>
+    <string name="Receiver">收件人</string>
+    <string name="send_cost">配送费用</string>
+    <string name="use_coupon">使用优惠券</string>
+    <string name="please_select">请选择</string>
+    <string name="free_freight">免运费</string>
+    <string name="youhui">优惠 ￥0</string>
+    <string name="youhui_empty">优惠 ￥</string>
+    <string name="need_pay">还需支付 ￥0.00</string>
+    <string name="need_pay_1">需支付 ￥0.00</string>
+    <string name="need_to_pay">需支付</string>
+    <string name="pay_now">立即支付</string>
+    <string name="address_prompt">请选择一个地址</string>
+    <string name="default_price">￥0.00</string>
+    <string name="calculate_price">￥0.00(免运费)</string>
+    <string name="my_cart">购物车</string>
+    <string name="fuhao">￥</string>
+    <string name="send_method_prompt">请选择配送方式</string>
+    <string name="receive_address_prompt">请选择收货地址</string>
+    <string name="freight">运费</string>
+    <string name="haixu_pay">还需支付 ￥</string>
+    <string name="xu_pay">需支付 ￥</string>
+    <string name="yuan_coupon">元优惠券</string>
+
+    <!--订单-->
+    <string name="order_all">全部</string>
+    <string name="order_nopay">待付款</string>
+    <string name="order_producting">生产中</string>
+    <string name="order_noreceive">待收货</string>
+    <string name="order_complete">已完成</string>
+    <string name="order_num">订单编号:</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="pay_order">确认支付</string>
+    <string name="delete_order">删除订单</string>
+    <string name="receive_order">确认收货</string>
+    <string name="order_status">订单状态:</string>
+
+    <!--现金订单-->
+    <string name="order_check">审核</string>
+    <string name="order_pass">待还款</string>
+    <string name="order_cancel">已取消</string>
+
+    <!--首页-->
+    <string name="home_start_customize">开始定制</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="gallery">相册</string>
+    <string name="camera">照相机</string>
+    <string name="pc">电脑</string>
+
+    <string name="material">素材</string>
+    <string name="template">边框</string>
+    <string name="filter">滤镜</string>
+    <string name="cutout">抠图</string>
+    <string name="shake">摇一摇</string>
+    <string name="per_mydesign">我的设计</string>
+
+    <string name="card_message">银行卡信息认证</string>
+    <string name="bank">开户行</string>
+
+</resources>

@@ -1,0 +1,353 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.ahxbapp.jsqb"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResAuto">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/tool_bar_title" />
+
+    <ScrollView
+        android:id="@+id/rootScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include2"
+        android:layout_marginTop="12dp"
+        android:background="@color/common_back_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_phone_certificat" />
+
+            <RelativeLayout
+                android:id="@+id/layoutRoot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/activity_vertical_margin">
+
+                        <LinearLayout
+                            android:id="@+id/loginLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:id="@+id/nowPhoneWrapper"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:paddingLeft="22dp"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/tv_phone1"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center"
+                                    android:text="手机号"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/phoneTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toRightOf="@+id/tv_phone1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/mOperatorsTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toRightOf="@+id/phoneTV"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/divide_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:paddingLeft="22dp">
+
+                                <TextView
+                                    android:id="@+id/tvPhone2"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center"
+                                    android:text="服务密码"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <com.ahxbapp.common.LoginEditText
+                                    android:id="@+id/editPassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="22dp"
+                                    android:background="@null"
+                                    android:drawablePadding="15dp"
+                                    android:hint="请输入服务密码"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="numberPassword"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/common_login_text"
+                                    android:textColorHint="@color/common_login_text_hit"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    custom:dark="true" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/divide_line" />
+
+                            <LinearLayout
+                                android:id="@+id/ll2"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:paddingLeft="22dp">
+
+                                <TextView
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center"
+                                    android:text="客服密码"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <com.ahxbapp.common.LoginEditText
+                                    android:id="@+id/editPassword1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="22dp"
+                                    android:background="@null"
+                                    android:drawablePadding="15dp"
+                                    android:hint="请输入客服密码"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="numberPassword"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/common_login_text"
+                                    android:textColorHint="@color/common_login_text_hit"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    custom:dark="true" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/divide_line" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/codeImgWrapper"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone">
+
+                                <com.ahxbapp.common.LoginEditText
+                                    android:id="@+id/editCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="22dp"
+                                    android:layout_marginRight="22dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/login_edit"
+                                    android:drawablePadding="15dp"
+                                    android:hint="请输入图片验证码"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/common_login_text"
+                                    android:textColorHint="@color/common_login_text_hit"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    custom:leftIcon="@mipmap/icon_phone" />
+
+                                <ImageView
+                                    android:id="@+id/checkCodeImg"
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@mipmap/ic_default_image" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/websitePassWordWrapper"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone">
+
+                                <com.ahxbapp.common.LoginEditText
+                                    android:id="@+id/editWebsite"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="22dp"
+                                    android:layout_marginRight="22dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/login_edit"
+                                    android:drawablePadding="15dp"
+                                    android:hint="请输入网站密码"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/common_login_text"
+                                    android:textColorHint="@color/common_login_text_hit"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    custom:leftIcon="@mipmap/icon_phone" />
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/smsWrapper"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <com.ahxbapp.common.LoginEditText
+                                    android:id="@+id/editSms"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="22dp"
+                                    android:layout_marginRight="22dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/login_edit"
+                                    android:drawablePadding="15dp"
+                                    android:hint="@string/login_code_hit"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/common_login_text"
+                                    android:textColorHint="@color/common_login_text_hit"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    custom:dark="true"
+                                    custom:leftIcon="@mipmap/icon_code" />
+
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/divide_line" />
+
+                                <com.ahxbapp.common.widget.ValidePhoneView
+                                    android:id="@+id/sendCode"
+                                    style="@style/ValidePhoneView"
+                                    android:layout_marginTop="4dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="22dp">
+
+                            <CheckBox
+                                android:id="@+id/checkPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:button="@drawable/check_state"
+                                android:checked="true"
+                                android:scaleX="0.7"
+                                android:scaleY="0.7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:text="我同意"
+                                android:textColor="@color/forget_pass"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/text_agree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/clear_color"
+                                android:text="《借款服务与隐私协议》"
+                                android:textColor="@color/text_red"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/loginButton"
+                            style="?android:textAppearanceButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="22dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/login_button"
+                            android:text="下一步"
+                            android:textColor="@drawable/font_login_button"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="温馨提示：\n• 我们不会保存您的账号密码\n• 服务密码是登录三大运营商（移动、电信、联通）营业厅密码\n• 登录成功将收到运营商通知短信，无需回复\n• 忘记密码可拨打运营商电话人工重置密码
+移动：10086  联通：10010  电信：10000 \n• 若认证失败，提示“系统繁忙，请您稍后再试”时建议您多尝试几次或在不同时段尝试认证\n• 若服务密码输错多次认证将被锁定，请先修改密码在24小时之后再次认证\n• 虚拟运营商（如号段是170）不支持认证，请更换真实运营商提交认证" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

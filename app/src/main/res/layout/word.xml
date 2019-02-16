@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="@color/nav_blue" >-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <include layout="@layout/tool_bar_title"/>
+    <EditText
+        android:id="@+id/word_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="请填写您的留言内容..."
+        android:gravity="top"
+        android:background="@color/white"
+        />
+    <Button
+        android:id="@+id/word_btn"
+        style="?android:textAppearanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_corner_btn"
+        android:textColor="@color/white"
+        android:text="提 交"
+        android:textSize="18sp"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp" />
+    <Button
+        android:id="@+id/phone_btn"
+        style="?android:textAppearanceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:drawableLeft="@mipmap/list_contact"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:textSize="18sp"
+         />
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:text="服务时间:8:00-21:00"/>
+
+</LinearLayout>

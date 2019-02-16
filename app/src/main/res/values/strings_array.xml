@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string-array name="user_program_title">
+        <item>TA参与的</item>
+        <item>TA收藏的</item>
+    </string-array>
+
+    <string-array name="camera_gallery">
+        <item>@string/camera</item>
+        <item>@string/gallery</item>
+        <item>取消</item>
+    </string-array>
+
+    <string-array name="sex_type">
+        <item>@string/person_male</item>
+        <item>@string/female</item>
+    </string-array>
+
+    <string-array name="merchant_jiuyuan_list_type">
+        <item>修理厂服务</item>
+        <item>预约保养</item>
+    </string-array>
+
+    <string-array name="order_type">
+        <item>@string/order_all</item>
+        <item>@string/order_nopay</item>
+        <item>@string/order_producting</item>
+        <item>@string/order_noreceive</item>
+        <item>@string/order_complete</item>
+    </string-array>
+
+    <string-array name="cash_order">
+        <item>@string/order_all</item>
+        <item>@string/order_check</item>
+        <item>@string/order_pass</item>
+        <item>@string/order_complete</item>
+        <item>@string/order_cancel</item>
+    </string-array>
+
+</resources>

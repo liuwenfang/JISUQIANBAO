@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar_title" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/all_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/nav_blue"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="必备认证"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_taobao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@mipmap/list_authentication_5"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:text="淘宝购物认证"
+                    android:textColor="@color/person_text"
+                    android:visibility="gone" />
+
+                <LinearLayout style="@style/certificationLine">
+
+                    <Button
+                        android:id="@+id/btn_zhifubao"
+                        style="@style/certificationButton"
+                        android:drawableTop="@mipmap/list_authentication_3"
+                        android:text="支付宝认证" />
+
+                    <TextView
+                        android:id="@+id/tvAliPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未认证"
+                        android:textColor="@color/btn_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/certificationLine">
+
+                    <Button
+                        android:id="@+id/btn_zhimafeng"
+                        style="@style/certificationButton"
+                        android:drawableTop="@mipmap/list_authentication_4"
+                        android:text="芝麻信用认证" />
+
+                    <TextView
+                        android:id="@+id/tvZMXY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未认证"
+                        android:textColor="@color/btn_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/certificationLine">
+
+                    <Button
+                        android:id="@+id/btn_lianxiren"
+                        style="@style/certificationButton"
+                        android:drawableTop="@mipmap/img_lianxiren"
+                        android:text="联系人认证" />
+
+                    <TextView
+                        android:id="@+id/tvContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未认证"
+                        android:textColor="@color/btn_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/certificationLine">
+
+                    <Button
+                        android:id="@+id/btn_shenfenzheng"
+                        style="@style/certificationButton"
+                        android:drawableTop="@mipmap/list_authentication_2"
+                        android:text="身份证认证" />
+
+                    <TextView
+                        android:id="@+id/tvId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未认证"
+                        android:textColor="@color/btn_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/certificationLine">
+
+                    <Button
+                        android:id="@+id/btn_shouji"
+                        style="@style/certificationButton"
+                        android:drawableTop="@mipmap/list_authentication_7"
+                        android:text="手机号码认证" />
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未认证"
+                        android:textColor="@color/btn_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/certificationLine">
+
+                    <Button
+                        android:id="@+id/btn_yinhangka"
+                        style="@style/certificationButton"
+                        android:drawableTop="@mipmap/list_authentication_6"
+                        android:text="银行卡信息认证" />
+
+                    <TextView
+                        android:id="@+id/tvBank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未认证"
+                        android:textColor="@color/btn_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/nav_blue"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="可选认证"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/fillet_border"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+                        <Button
+                            android:id="@+id/btn_xuexin"
+                            style="@style/certificationButton"
+                            android:drawableTop="@mipmap/list_authentication_1"
+                            android:text="学信网认证" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未认证"
+                            android:textColor="@color/btn_gray"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

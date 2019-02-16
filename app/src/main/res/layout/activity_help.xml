@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ahxbapp.jsqb.activity.HelpActivity">
+    <include layout="@layout/tool_bar_title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mToolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="18sp"
+                android:text="操作流程："
+                android:textColor="#FFA828"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:text="1.请先将二维码截图保存"
+                android:textColor="#FFA828"
+                android:paddingLeft="15dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@mipmap/sone"
+                android:layout_weight="0.85" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:text="2.请打开支付宝，点击首页扫一扫"
+                android:textColor="#FFA828"
+                android:paddingLeft="15dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@mipmap/stwo"
+                android:layout_weight="0.85" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:text="3.点击左上角图片，找到保存的图片进行扫描"
+                android:textColor="#FFA828"
+                android:paddingLeft="15dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@mipmap/sthree"
+                android:layout_weight="0.85" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:text="4.允许在电脑端登录支付宝，确定后返回本应用继续认证即可"
+                android:textColor="#FFA828"
+                android:paddingLeft="15dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@mipmap/sfour"
+                android:layout_weight="0.85"
+                android:layout_marginBottom="30dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

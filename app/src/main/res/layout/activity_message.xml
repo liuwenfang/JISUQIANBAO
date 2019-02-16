@@ -1,0 +1,26 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/all_bg">
+
+
+    <include layout="@layout/tool_bar_title"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mylist"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:divider="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <include
+        android:id="@+id/blankLayout"
+        layout="@layout/view_exception"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    tools:context="com.ahxbapp.jsqb.activity.PhoneVerActivity">
+
+    <include layout="@layout/tool_bar_title" />
+
+    <LinearLayout
+        android:id="@+id/phoneLL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/mToolbar"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="您的手机号："
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mPhoneTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:textColor="@color/phone_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="所属运营商："
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mOperatorsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:textColor="@color/nav_blue"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                custom:leftIcon="@mipmap/icon_phone"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneLL"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.ahxbapp.common.LoginEditText
+            android:id="@+id/mOperatorsPassET"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@color/transparent"
+            android:drawablePadding="15dp"
+            android:hint="运营商服务密码"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/common_login_text"
+            android:textColorHint="@color/common_login_text_hit"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            custom:leftIcon="@mipmap/icon_code" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.ahxbapp.common.LoginEditText
+                android:id="@+id/mEditCode"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawablePadding="15dp"
+                android:hint="请输入短信验证码"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/common_login_text"
+                android:textColorHint="@color/common_login_text_hit"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"
+                custom:leftIcon="@mipmap/icon_code" />
+
+            <View
+                android:layout_width="0.7dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:background="@color/divide_line" />
+
+            <com.ahxbapp.common.widget.ValidePhoneView
+                android:id="@+id/mSendCode"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/phone_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/agreeLL"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/loginLayout"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/mAgreeCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/check_state"
+            android:checked="true"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="我同意"
+            android:textColor="@color/forget_pass"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@color/clear_color"
+            android:text="《极速钱包用户协议》"
+            android:textColor="@color/common_btn_bg"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mNextBN"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/agreeLL"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <!--android:background="@drawable/btn_submit"-->
+
+</RelativeLayout>

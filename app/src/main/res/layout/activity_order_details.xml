@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CashDetailsActivity">
+
+    <include layout="@layout/tool_bar_title" />
+
+    <!--<ListView-->
+    <!--android:layout_below="@+id/mToolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/mListView"-->
+    <!--/>-->
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/mToolbar">
+
+        <LinearLayout
+            android:id="@+id/left1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<View-->
+            <!--android:layout_width="0.5dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_marginLeft="27dp"-->
+            <!--android:background="#A6A6A6" />-->
+
+            <TextView
+                android:id="@+id/one_text"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_grey"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="27dp"
+                android:background="#A6A6A6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/left1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/mTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审核中"
+                android:textColor="@color/font_grey2"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mContent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="预计十分钟告诉您结果"
+                    android:textColor="@color/font_grey2"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/RL1">
+
+        <LinearLayout
+            android:id="@+id/left2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="27dp"
+                android:background="#A6A6A6" />
+
+            <TextView
+                android:id="@+id/two_text"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/text_grey"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="27dp"
+                android:background="#A6A6A6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/left2"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/mTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认银行卡"
+                android:textColor="@color/font_grey2"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mContent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="请确认收款银行卡，或更换银行卡"
+                android:textColor="@color/font_grey2"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/RL2">
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="27dp"
+                android:background="#A6A6A6" />
+
+            <TextView
+                android:id="@+id/three_text"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/text_grey"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="27dp"
+                android:background="#A6A6A6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/left"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/mTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份认证"
+                android:textColor="@color/font_grey2"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mContent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="确认本人借款，确保资金安全"
+                android:textColor="@color/font_grey2"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/RL3">
+
+        <LinearLayout
+            android:id="@+id/left3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="27dp"
+                android:background="#A6A6A6" />
+
+            <TextView
+                android:id="@+id/four_text"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/text_grey"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="27dp"
+                android:background="#A6A6A6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/left3"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="签约"
+                android:textColor="@color/font_grey2"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mContent4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="审核通过后，签约放款，保护您的利益"
+                android:textColor="@color/font_grey2"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/RL4">
+
+        <LinearLayout
+            android:id="@+id/left4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="27dp"
+                android:background="#A6A6A6" />
+
+            <TextView
+                android:id="@+id/five_text"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/text_grey"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white" />
+
+            <!--<View-->
+            <!--android:layout_width="0.5dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_marginLeft="27dp"-->
+            <!--android:background="#A6A6A6" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/left4"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/mTitle5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:textColor="@color/font_grey2"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mContent5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="签约完成，即时到账"
+                android:textColor="@color/font_grey2"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:layout_below="@+id/RL5"
+        android:id="@+id/statusBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_cut_gray"
+        android:text="请耐心等待"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_below="@+id/statusBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="13sp"
+        android:text="防骗提示：在您申请借款的过程中，极速钱包官方及工作人员不会通过电话、短信、邮件等任何形式，以担保费、咨询费等任何名义向您收取任何费用。请您务必知晓，谨防诈骗。"/>
+</RelativeLayout>

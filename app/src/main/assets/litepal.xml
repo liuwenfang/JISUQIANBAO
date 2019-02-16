@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="xbapp_yt" ></dbname>
+
+    <version value="1" ></version>
+
+    <list>
+        <mapping class="com.ahxbapp.jsqb.model.User"></mapping>
+        <mapping class="com.ahxbapp.jsqb.model.AddressModel"/>
+    </list>
+</litepal>  

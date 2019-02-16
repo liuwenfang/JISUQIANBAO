@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\indicator_arrow_old.png",
+        "source": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\indicator_arrow_old.png"
+    },
+    {
+        "merged": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_flip_old.png",
+        "source": "E:\\ASproject\\JISUQIANBAO\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_flip_old.png"
+    }
+]

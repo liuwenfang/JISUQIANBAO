@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="android_spirit-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/957764e0a3de0511f560011c318f221515f6c0b7/output/jars/libs/tbs_20180608_43610.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/957764e0a3de0511f560011c318f221515f6c0b7/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/957764e0a3de0511f560011c318f221515f6c0b7/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

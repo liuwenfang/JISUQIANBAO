@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ahxbapp.jsqb">
+
+    <!-- <uses-sdk -->
+    <!-- android:minSdkVersion="17" -->
+    <!-- android:targetSdkVersion="22" /> -->
+    <!-- 高德地图权限 ———————————————————————————————————————————————————————————— -->
+
+
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 添加权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.PERMISSION_GRANTED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 读取通讯录权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <!-- 信鸽需要的权限 begin ———————————————————————————————————————————————————————————— -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 【常用】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 信鸽需要的权限 end —————————————————————————————————————————————————————————————— -->
+
+
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- <permission -->
+    <!-- android:name="${applicationId}.permission.JPUSH_MESSAGE" -->
+    <!-- android:protectionLevel="signature" -->
+    <!-- tools:replace="android:name" /> -->
+
+
+    <!-- <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" /> -->
+    <!-- Required -->
+    <permission
+        android:name="${applicationId}.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 友盟社会化分享需要 end    —————————————————————————————————————————————————————————————— -->
+    <!-- tools:replace="android:icon, android:theme,andrid:name, android:label，android:heme" -->
+    <application
+        android:name=".application.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/ActionbarNoIcon"
+        tools:replace="android:name,android:icon">
+
+        <!-- 检查更新下载完成后的广播通知 -->
+        <receiver
+            android:name=".updateapp.UpdateAppReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.LaunchActivity_"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoanMainActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+
+        <!-- 友盟 -->
+        <!-- <activity -->
+        <!-- android:name="com.umeng.socialize.editorpage.ShareActivity" -->
+        <!-- android:excludeFromRecents="true" -->
+        <!-- android:theme="@style/Theme.UMDefault" /> -->
+        <!-- QQ -->
+        <!-- <activity -->
+        <!-- android:name="com.tencent.tauth.AuthActivity" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:noHistory="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+        <!-- &lt;!&ndash; 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID &ndash;&gt; -->
+        <!-- <data android:scheme="tencent1105718739" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 新浪微博 -->
+        <!-- <activity -->
+        <!-- android:name=".WBShareActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" -->
+        <!-- android:configChanges="keyboardHidden|orientation" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustResize" /> -->
+        <!-- <service android:name="com.sina.weibo.sdk.net.DownloadService" -->
+        <!-- android:exported="false"></service> -->
+
+
+        <!-- <activity -->
+        <!-- android:name="com.tencent.connect.common.AssistActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+
+
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_APPKEY" -->
+        <!-- android:value="5817ff4f4ad1564df7001a71" /> -->
+
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理 -->
+        <activity
+            android:name=".activity.PayWebActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.IDPhotoActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.FirstCerActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.SingedActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.CashOrderDetailActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.TaobaoCerActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.AlipayCerActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.LoginActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.RegisterActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.ForgetActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.ForgetActivity1_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.MessageActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.SettingActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.SecurityCodeActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.SetWebActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.OtherRegActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.BindingActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.PersonDataActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.FAQActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.AccountActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.WordActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <!-- <activity android:name=".activity.PersonActivity_" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/ActionbarSpannerTheme1" /> -->
+        <!-- <activity android:name=".activity.LoanActivity_" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/ActionbarSpannerTheme1" /> -->
+        <activity
+            android:name=".activity.StartBorrowingsActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.NecessaryCerActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name="com.ahxbapp.common.ui.BackActivity_"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.PhoneActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.Phone2Activity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.UserInfoUpdateActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.WebActivity_"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ForgetActivity" />
+        <activity android:name=".activity.ForgetActivity1" />
+        <activity android:name=".activity.MessageActivity" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
+
+        <activity
+            android:name=".activity.CardActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity android:name=".activity.JobActivity_" />
+        <activity
+            android:name=".activity.PersonalDetailsActivity_"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity android:name=".activity.StartBorrowingsActivity" />
+        <activity
+            android:name=".activity.ContactPersonActivity_"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.CashOrdeActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderListActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PhoneVerActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CashDetailsActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CouponCashActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.BindingActivity" />
+        <activity android:name=".activity.OtherRegActivity" />
+        <activity android:name=".activity.TaobaoCerActivity" />
+        <activity android:name=".activity.AlipayCerActivity" />
+        <activity android:name=".activity.CashOrderDetailActivity" />
+        <activity android:name=".activity.SingedActivity" />
+        <activity android:name=".activity.FirstCerActivity" />
+        <activity android:name=".activity.IDPhotoActivity" />
+        <activity android:name=".activity.PayWebActivity" />
+        <activity android:name=".activity.RectCameraActivity" />
+        <activity android:name=".activity.HelpActivity_" />
+        <activity
+            android:name="com.switfpass.pay.activity.QQWapPayWebView"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.HelpCenterActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.HelpCenterActivity" />
+        <activity android:name=".activity.KeFuActivity" />
+        <activity
+            android:name=".activity.KeFuActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.Phone3Activity" />
+        <activity android:name=".activity.CashOrdeActivity" />
+        <activity android:name=".activity.PayActivity" />
+        <activity
+            android:name=".activity.PayActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.BankActivity" />
+        <activity
+            android:name=".activity.BankActivity_"
+            android:screenOrientation="portrait" />
+
+        <!-- LLYT SDK START -->
+        <!-- <activity -->
+        <!-- android:name="com.yintong.secure.activity.BaseActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" -->
+        <!-- android:windowSoftInputMode="adjustResize" /> -->
+        <activity
+            android:name="com.yintong.secure.activity.BaseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service android:name="com.yintong.secure.service.PayService" />
+        <!-- LLYT SDK END -->
+        <activity android:name=".activity.BankCodeActivity" />
+        <activity android:name=".activity.BankCodeActivity_" />
+        <activity android:name=".activity.MailListActivity" />
+        <activity
+            android:name=".activity.MailListActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ZMActivity" />
+        <activity android:name=".activity.ZMActivity_" />
+        <activity android:name=".activity.ConsummateInfoActivity" />
+        <activity android:name=".activity.ConsummateInfoActivity_" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.JpushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.ahxbapp.jsqb" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </service>
+
+        <!-- since 3.1.0 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="${applicationId}.DownloadProvider"
+            android:exported="true" />
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <!-- SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="1d67c94f97b45cc7006c50c4" />
+
+        <activity
+            android:name=".activity.LoanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoanActivity_"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.InvitationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InvitationActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity
+            android:name=".activity.ClassitifyActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+        <activity android:name=".activity.ClassitifyActivity" />
+        <activity android:name=".activity.GuideActivity"></activity>
+        <activity
+            android:name=".activity.GuideActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionbarSpannerTheme1" />
+
+    </application>
+
+</manifest>

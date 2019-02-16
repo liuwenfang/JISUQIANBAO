@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg">
+    <include layout="@layout/tool_bar_title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="手机号码"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@color/divide_line" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="职业"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_zhiye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/zhiye_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="修改"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@color/divide_line" />
+            <RelativeLayout
+                android:id="@+id/per_shouru"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="收入水平"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_shouru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/shouru_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="修改"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@color/divide_line" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/lianxiren1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="联系人1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_lianxiren1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/lianxiren1_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="修改"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@color/divide_line" />
+            <RelativeLayout
+                android:id="@+id/per_lianxiren2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/lianxiren2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="联系人2"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_lianxiren2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/lianxiren2_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="修改"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/per_sehnfenzheng"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="身份证号"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_shenfenzheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/shenfenzheng_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="修改"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@color/divide_line"
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="真实姓名"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_xingming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/xingming_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="修改"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="银行名称"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_yinhang_ming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/yinhangName_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="修改"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@color/divide_line"
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:id="@+id/per_yinhang_kahao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="银行卡号"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_kahao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/yinhang_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="修改"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

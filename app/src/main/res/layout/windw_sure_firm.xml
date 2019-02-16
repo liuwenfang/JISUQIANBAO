@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e0000000"
+            android:layout_above="@+id/more_window_online"
+            >
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/more_window_local"
+            android:layout_width="68dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="30dip"
+            android:clickable="true"
+            android:drawableTop="@mipmap/icon_repair"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/more_window_item_margin"
+            android:text="修理厂"
+            android:layout_alignTop="@+id/more_window_online"
+            android:layout_toStartOf="@+id/more_window_online"
+            android:layout_marginTop="31dp" />
+        <TextView
+            android:id="@+id/more_window_online"
+            android:layout_width="68dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="30dip"
+            android:clickable="true"
+            android:drawableTop="@mipmap/icon_safecompay"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/more_window_item_margin"
+            android:layout_marginBottom="124dp"
+            android:text="保险公司"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/more_window_delete"
+            android:layout_width="68dp"
+            android:layout_height="90dp"
+            android:clickable="true"
+            android:drawableTop="@mipmap/icon_evenphoto"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/more_window_item_margin"
+            android:text="事故拍照"
+            android:layout_alignTop="@+id/more_window_local"
+            android:layout_toEndOf="@+id/more_window_online" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            >
+
+        </LinearLayout>
+</RelativeLayout>
